@@ -1,5 +1,4 @@
 import os
-
 import numpy as np
 import tensorflow as tf
 import cv2
@@ -167,16 +166,6 @@ class MaskValidation:
 
         #metric - 1pixel wide border error in annotating of image
         self.calculate_1_px_error()
-
-
-if __name__ == "__main__":
-    #Paths to the ground truth and prediction folders
-    gt_folder = "/path/to/GrandTruth_images/folder/"
-    pred_folder = "/path/to/predicted_images/folder/"
-
-    validator = MaskValidation()
-    validator.load_images(gt_folder,pred_folder)
-
     validator.metrix()
 
 
