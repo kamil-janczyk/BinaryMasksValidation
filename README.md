@@ -24,7 +24,8 @@ Used dependencies are in requirements.txt file.
 
 Example of use:
 
-    if __name__ == "__main__":
+    from MaskValidation import MaskValidation
+    if __name__ == "__main__":    
         # Paths to the ground truth and prediction folders
         gt_folder = "/path/to/ground_truth_images/folder/"
         pred_folder = "/path/to/predicted_images/folder/"
